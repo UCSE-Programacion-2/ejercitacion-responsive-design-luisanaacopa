@@ -184,3 +184,144 @@ footer ul {
 
 /*** Responsive */
 
+
+/* ========================= */
+/* 📱 TABLET (≤768px) */
+/* ========================= */
+@media (max-width: 768px) {
+
+    /* NAV centrado */
+    nav ul {
+        justify-content: center;
+    }
+
+    /* CARDS en columna */
+    #card-section > div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    /* CONTACTO en columna */
+    section > div {
+        flex-direction: column;
+    }
+
+    .formulario,
+    .contacto {
+        width: 100%;
+    }
+
+    /* 🔥 CENTRAR DATOS DE CONTACTO */
+    .contacto {
+        text-align: center;
+    }
+
+    /* FOOTER en columna */
+    footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    footer > div {
+        width: 100%;
+    }
+
+    /* 🔥 ARREGLAR NEWSLETTER (NO SE BAJA EL BOTON) */
+    .news-letter {
+        display: flex;
+        gap: 10px;
+    }
+
+    .news-letter > input[type="text"] {
+        width: 70%;
+    }
+
+    .news-letter > input[type="submit"] {
+        position: static;
+        width: 30%;
+    }
+}
+
+
+/* ========================= */
+/* 📱 MÓVIL (≤450px) */
+/* ========================= */
+@media (max-width: 450px) {
+
+    /* NAV vertical */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px 0;
+    }
+
+    /* HEADER más chico */
+    .bg-header {
+        height: 200px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .bg-header h1 {
+        font-size: 1.5rem;
+    }
+
+    /* CARDS full ancho */
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* FORM más compacto */
+    form {
+        padding: 20px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    /* 🔥 CONTACTO centrado */
+    .contacto {
+        text-align: center;
+    }
+
+    .contacto p {
+        font-size: 14px;
+    }
+
+    /* 🔥 NEWSLETTER PROLIJO (NO SE ROMPE) */
+    .news-letter {
+        display: flex;
+        gap: 5px;
+    }
+
+    .news-letter > input[type="text"] {
+        width: 65%;
+    }
+
+    .news-letter > input[type="submit"] {
+        width: 35%;
+        font-size: 12px;
+        padding: 6px;
+        position: static;
+    }
+
+    /* FOOTER compacto */
+    footer {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
